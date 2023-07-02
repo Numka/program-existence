@@ -1,7 +1,7 @@
 import 'package:bloc/bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
-import '../../domain/question.dart';
+import '../../domain/quizzes/question.dart';
 import '../../infrastructure/network/remote_server.dart';
 
 part 'quiz_fetcher_event.dart';

@@ -1,9 +1,10 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 
-import 'package:program_existence/domain/question.dart';
 import 'package:program_existence/infrastructure/network/request.dart';
 import 'package:program_existence/infrastructure/network/rest_api.dart';
-import 'package:program_existence/domain/server_interface.dart';
+
+import '../../domain/quizzes/question.dart';
+import '../../domain/quizzes/server_interface.dart';
 
 class RemoteServer implements ServerInterface {
   RestAPI apiQuizzes;

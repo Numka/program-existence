@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:program_existence/apperance/quizzes/quiz_play/quiz_play.dart';
-import 'package:program_existence/domain/quiz.dart';
 import 'package:program_existence/env/network.dart';
 import 'package:program_existence/infrastructure/network/remote_server.dart';
 import 'package:program_existence/infrastructure/network/rest_api.dart';
 
 import '../../../application/quiz_fetcher/quiz_fetcher_bloc.dart';
+import '../../../domain/quizzes/quiz.dart';
 
 class QuizHub extends StatelessWidget {
   const QuizHub({super.key});

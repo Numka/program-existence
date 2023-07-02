@@ -1,5 +1,5 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:program_existence/domain/question.dart';
+import 'package:program_existence/domain/quizzes/question.dart';
 
 part 'quiz.freezed.dart';
 
