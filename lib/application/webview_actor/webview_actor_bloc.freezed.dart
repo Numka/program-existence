@@ -19,32 +19,38 @@ mixin _$WebviewActorEvent {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() linkCheckRequested,
+    required TResult Function(String url) linkAcquired,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? linkCheckRequested,
+    TResult? Function(String url)? linkAcquired,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? linkCheckRequested,
+    TResult Function(String url)? linkAcquired,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(LinkCheckRequested value) linkCheckRequested,
+    required TResult Function(LinkAcquired value) linkAcquired,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(LinkCheckRequested value)? linkCheckRequested,
+    TResult? Function(LinkAcquired value)? linkAcquired,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(LinkCheckRequested value)? linkCheckRequested,
+    TResult Function(LinkAcquired value)? linkAcquired,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -107,6 +113,7 @@ class _$LinkCheckRequested implements LinkCheckRequested {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() linkCheckRequested,
+    required TResult Function(String url) linkAcquired,
   }) {
     return linkCheckRequested();
   }
@@ -115,6 +122,7 @@ class _$LinkCheckRequested implements LinkCheckRequested {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? linkCheckRequested,
+    TResult? Function(String url)? linkAcquired,
   }) {
     return linkCheckRequested?.call();
   }
@@ -123,6 +131,7 @@ class _$LinkCheckRequested implements LinkCheckRequested {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? linkCheckRequested,
+    TResult Function(String url)? linkAcquired,
     required TResult orElse(),
   }) {
     if (linkCheckRequested != null) {
@@ -135,6 +144,7 @@ class _$LinkCheckRequested implements LinkCheckRequested {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(LinkCheckRequested value) linkCheckRequested,
+    required TResult Function(LinkAcquired value) linkAcquired,
   }) {
     return linkCheckRequested(this);
   }
@@ -143,6 +153,7 @@ class _$LinkCheckRequested implements LinkCheckRequested {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(LinkCheckRequested value)? linkCheckRequested,
+    TResult? Function(LinkAcquired value)? linkAcquired,
   }) {
     return linkCheckRequested?.call(this);
   }
@@ -151,6 +162,7 @@ class _$LinkCheckRequested implements LinkCheckRequested {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(LinkCheckRequested value)? linkCheckRequested,
+    TResult Function(LinkAcquired value)? linkAcquired,
     required TResult orElse(),
   }) {
     if (linkCheckRequested != null) {
@@ -165,48 +177,187 @@ abstract class LinkCheckRequested implements WebviewActorEvent {
 }
 
 /// @nodoc
+abstract class _$$LinkAcquiredCopyWith<$Res> {
+  factory _$$LinkAcquiredCopyWith(
+          _$LinkAcquired value, $Res Function(_$LinkAcquired) then) =
+      __$$LinkAcquiredCopyWithImpl<$Res>;
+  @useResult
+  $Res call({String url});
+}
+
+/// @nodoc
+class __$$LinkAcquiredCopyWithImpl<$Res>
+    extends _$WebviewActorEventCopyWithImpl<$Res, _$LinkAcquired>
+    implements _$$LinkAcquiredCopyWith<$Res> {
+  __$$LinkAcquiredCopyWithImpl(
+      _$LinkAcquired _value, $Res Function(_$LinkAcquired) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? url = null,
+  }) {
+    return _then(_$LinkAcquired(
+      null == url
+          ? _value.url
+          : url // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$LinkAcquired implements LinkAcquired {
+  const _$LinkAcquired(this.url);
+
+  @override
+  final String url;
+
+  @override
+  String toString() {
+    return 'WebviewActorEvent.linkAcquired(url: $url)';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$LinkAcquired &&
+            (identical(other.url, url) || other.url == url));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, url);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$LinkAcquiredCopyWith<_$LinkAcquired> get copyWith =>
+      __$$LinkAcquiredCopyWithImpl<_$LinkAcquired>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() linkCheckRequested,
+    required TResult Function(String url) linkAcquired,
+  }) {
+    return linkAcquired(url);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? linkCheckRequested,
+    TResult? Function(String url)? linkAcquired,
+  }) {
+    return linkAcquired?.call(url);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? linkCheckRequested,
+    TResult Function(String url)? linkAcquired,
+    required TResult orElse(),
+  }) {
+    if (linkAcquired != null) {
+      return linkAcquired(url);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(LinkCheckRequested value) linkCheckRequested,
+    required TResult Function(LinkAcquired value) linkAcquired,
+  }) {
+    return linkAcquired(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(LinkCheckRequested value)? linkCheckRequested,
+    TResult? Function(LinkAcquired value)? linkAcquired,
+  }) {
+    return linkAcquired?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(LinkCheckRequested value)? linkCheckRequested,
+    TResult Function(LinkAcquired value)? linkAcquired,
+    required TResult orElse(),
+  }) {
+    if (linkAcquired != null) {
+      return linkAcquired(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class LinkAcquired implements WebviewActorEvent {
+  const factory LinkAcquired(final String url) = _$LinkAcquired;
+
+  String get url;
+  @JsonKey(ignore: true)
+  _$$LinkAcquiredCopyWith<_$LinkAcquired> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
 mixin _$WebviewActorState {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() quizhub,
-    required TResult Function() webview,
+    required TResult Function() quizhubOption,
+    required TResult Function(String url) webviewOption,
+    required TResult Function() noInternetOption,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? quizhub,
-    TResult? Function()? webview,
+    TResult? Function()? quizhubOption,
+    TResult? Function(String url)? webviewOption,
+    TResult? Function()? noInternetOption,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? quizhub,
-    TResult Function()? webview,
+    TResult Function()? quizhubOption,
+    TResult Function(String url)? webviewOption,
+    TResult Function()? noInternetOption,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(Initial value) initial,
-    required TResult Function(Quizhub value) quizhub,
-    required TResult Function(Webview value) webview,
+    required TResult Function(QuizhubOption value) quizhubOption,
+    required TResult Function(WebviewOption value) webviewOption,
+    required TResult Function(NoInternetOption value) noInternetOption,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(Initial value)? initial,
-    TResult? Function(Quizhub value)? quizhub,
-    TResult? Function(Webview value)? webview,
+    TResult? Function(QuizhubOption value)? quizhubOption,
+    TResult? Function(WebviewOption value)? webviewOption,
+    TResult? Function(NoInternetOption value)? noInternetOption,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
-    TResult Function(Quizhub value)? quizhub,
-    TResult Function(Webview value)? webview,
+    TResult Function(QuizhubOption value)? quizhubOption,
+    TResult Function(WebviewOption value)? webviewOption,
+    TResult Function(NoInternetOption value)? noInternetOption,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -267,8 +418,9 @@ class _$Initial implements Initial {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() quizhub,
-    required TResult Function() webview,
+    required TResult Function() quizhubOption,
+    required TResult Function(String url) webviewOption,
+    required TResult Function() noInternetOption,
   }) {
     return initial();
   }
@@ -277,8 +429,9 @@ class _$Initial implements Initial {
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? quizhub,
-    TResult? Function()? webview,
+    TResult? Function()? quizhubOption,
+    TResult? Function(String url)? webviewOption,
+    TResult? Function()? noInternetOption,
   }) {
     return initial?.call();
   }
@@ -287,8 +440,9 @@ class _$Initial implements Initial {
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? quizhub,
-    TResult Function()? webview,
+    TResult Function()? quizhubOption,
+    TResult Function(String url)? webviewOption,
+    TResult Function()? noInternetOption,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -301,8 +455,9 @@ class _$Initial implements Initial {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(Initial value) initial,
-    required TResult Function(Quizhub value) quizhub,
-    required TResult Function(Webview value) webview,
+    required TResult Function(QuizhubOption value) quizhubOption,
+    required TResult Function(WebviewOption value) webviewOption,
+    required TResult Function(NoInternetOption value) noInternetOption,
   }) {
     return initial(this);
   }
@@ -311,8 +466,9 @@ class _$Initial implements Initial {
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(Initial value)? initial,
-    TResult? Function(Quizhub value)? quizhub,
-    TResult? Function(Webview value)? webview,
+    TResult? Function(QuizhubOption value)? quizhubOption,
+    TResult? Function(WebviewOption value)? webviewOption,
+    TResult? Function(NoInternetOption value)? noInternetOption,
   }) {
     return initial?.call(this);
   }
@@ -321,8 +477,9 @@ class _$Initial implements Initial {
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
-    TResult Function(Quizhub value)? quizhub,
-    TResult Function(Webview value)? webview,
+    TResult Function(QuizhubOption value)? quizhubOption,
+    TResult Function(WebviewOption value)? webviewOption,
+    TResult Function(NoInternetOption value)? noInternetOption,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -337,33 +494,35 @@ abstract class Initial implements WebviewActorState {
 }
 
 /// @nodoc
-abstract class _$$QuizhubCopyWith<$Res> {
-  factory _$$QuizhubCopyWith(_$Quizhub value, $Res Function(_$Quizhub) then) =
-      __$$QuizhubCopyWithImpl<$Res>;
+abstract class _$$QuizhubOptionCopyWith<$Res> {
+  factory _$$QuizhubOptionCopyWith(
+          _$QuizhubOption value, $Res Function(_$QuizhubOption) then) =
+      __$$QuizhubOptionCopyWithImpl<$Res>;
 }
 
 /// @nodoc
-class __$$QuizhubCopyWithImpl<$Res>
-    extends _$WebviewActorStateCopyWithImpl<$Res, _$Quizhub>
-    implements _$$QuizhubCopyWith<$Res> {
-  __$$QuizhubCopyWithImpl(_$Quizhub _value, $Res Function(_$Quizhub) _then)
+class __$$QuizhubOptionCopyWithImpl<$Res>
+    extends _$WebviewActorStateCopyWithImpl<$Res, _$QuizhubOption>
+    implements _$$QuizhubOptionCopyWith<$Res> {
+  __$$QuizhubOptionCopyWithImpl(
+      _$QuizhubOption _value, $Res Function(_$QuizhubOption) _then)
       : super(_value, _then);
 }
 
 /// @nodoc
 
-class _$Quizhub implements Quizhub {
-  const _$Quizhub();
+class _$QuizhubOption implements QuizhubOption {
+  const _$QuizhubOption();
 
   @override
   String toString() {
-    return 'WebviewActorState.quizhub()';
+    return 'WebviewActorState.quizhubOption()';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$Quizhub);
+        (other.runtimeType == runtimeType && other is _$QuizhubOption);
   }
 
   @override
@@ -373,32 +532,35 @@ class _$Quizhub implements Quizhub {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() quizhub,
-    required TResult Function() webview,
+    required TResult Function() quizhubOption,
+    required TResult Function(String url) webviewOption,
+    required TResult Function() noInternetOption,
   }) {
-    return quizhub();
+    return quizhubOption();
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? quizhub,
-    TResult? Function()? webview,
+    TResult? Function()? quizhubOption,
+    TResult? Function(String url)? webviewOption,
+    TResult? Function()? noInternetOption,
   }) {
-    return quizhub?.call();
+    return quizhubOption?.call();
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? quizhub,
-    TResult Function()? webview,
+    TResult Function()? quizhubOption,
+    TResult Function(String url)? webviewOption,
+    TResult Function()? noInternetOption,
     required TResult orElse(),
   }) {
-    if (quizhub != null) {
-      return quizhub();
+    if (quizhubOption != null) {
+      return quizhubOption();
     }
     return orElse();
   }
@@ -407,69 +569,219 @@ class _$Quizhub implements Quizhub {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(Initial value) initial,
-    required TResult Function(Quizhub value) quizhub,
-    required TResult Function(Webview value) webview,
+    required TResult Function(QuizhubOption value) quizhubOption,
+    required TResult Function(WebviewOption value) webviewOption,
+    required TResult Function(NoInternetOption value) noInternetOption,
   }) {
-    return quizhub(this);
+    return quizhubOption(this);
   }
 
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(Initial value)? initial,
-    TResult? Function(Quizhub value)? quizhub,
-    TResult? Function(Webview value)? webview,
+    TResult? Function(QuizhubOption value)? quizhubOption,
+    TResult? Function(WebviewOption value)? webviewOption,
+    TResult? Function(NoInternetOption value)? noInternetOption,
   }) {
-    return quizhub?.call(this);
+    return quizhubOption?.call(this);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
-    TResult Function(Quizhub value)? quizhub,
-    TResult Function(Webview value)? webview,
+    TResult Function(QuizhubOption value)? quizhubOption,
+    TResult Function(WebviewOption value)? webviewOption,
+    TResult Function(NoInternetOption value)? noInternetOption,
     required TResult orElse(),
   }) {
-    if (quizhub != null) {
-      return quizhub(this);
+    if (quizhubOption != null) {
+      return quizhubOption(this);
     }
     return orElse();
   }
 }
 
-abstract class Quizhub implements WebviewActorState {
-  const factory Quizhub() = _$Quizhub;
+abstract class QuizhubOption implements WebviewActorState {
+  const factory QuizhubOption() = _$QuizhubOption;
 }
 
 /// @nodoc
-abstract class _$$WebviewCopyWith<$Res> {
-  factory _$$WebviewCopyWith(_$Webview value, $Res Function(_$Webview) then) =
-      __$$WebviewCopyWithImpl<$Res>;
+abstract class _$$WebviewOptionCopyWith<$Res> {
+  factory _$$WebviewOptionCopyWith(
+          _$WebviewOption value, $Res Function(_$WebviewOption) then) =
+      __$$WebviewOptionCopyWithImpl<$Res>;
+  @useResult
+  $Res call({String url});
 }
 
 /// @nodoc
-class __$$WebviewCopyWithImpl<$Res>
-    extends _$WebviewActorStateCopyWithImpl<$Res, _$Webview>
-    implements _$$WebviewCopyWith<$Res> {
-  __$$WebviewCopyWithImpl(_$Webview _value, $Res Function(_$Webview) _then)
+class __$$WebviewOptionCopyWithImpl<$Res>
+    extends _$WebviewActorStateCopyWithImpl<$Res, _$WebviewOption>
+    implements _$$WebviewOptionCopyWith<$Res> {
+  __$$WebviewOptionCopyWithImpl(
+      _$WebviewOption _value, $Res Function(_$WebviewOption) _then)
       : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? url = null,
+  }) {
+    return _then(_$WebviewOption(
+      null == url
+          ? _value.url
+          : url // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
 }
 
 /// @nodoc
 
-class _$Webview implements Webview {
-  const _$Webview();
+class _$WebviewOption implements WebviewOption {
+  const _$WebviewOption(this.url);
+
+  @override
+  final String url;
 
   @override
   String toString() {
-    return 'WebviewActorState.webview()';
+    return 'WebviewActorState.webviewOption(url: $url)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$Webview);
+        (other.runtimeType == runtimeType &&
+            other is _$WebviewOption &&
+            (identical(other.url, url) || other.url == url));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, url);
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$WebviewOptionCopyWith<_$WebviewOption> get copyWith =>
+      __$$WebviewOptionCopyWithImpl<_$WebviewOption>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() quizhubOption,
+    required TResult Function(String url) webviewOption,
+    required TResult Function() noInternetOption,
+  }) {
+    return webviewOption(url);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? quizhubOption,
+    TResult? Function(String url)? webviewOption,
+    TResult? Function()? noInternetOption,
+  }) {
+    return webviewOption?.call(url);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? quizhubOption,
+    TResult Function(String url)? webviewOption,
+    TResult Function()? noInternetOption,
+    required TResult orElse(),
+  }) {
+    if (webviewOption != null) {
+      return webviewOption(url);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(Initial value) initial,
+    required TResult Function(QuizhubOption value) quizhubOption,
+    required TResult Function(WebviewOption value) webviewOption,
+    required TResult Function(NoInternetOption value) noInternetOption,
+  }) {
+    return webviewOption(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(Initial value)? initial,
+    TResult? Function(QuizhubOption value)? quizhubOption,
+    TResult? Function(WebviewOption value)? webviewOption,
+    TResult? Function(NoInternetOption value)? noInternetOption,
+  }) {
+    return webviewOption?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(Initial value)? initial,
+    TResult Function(QuizhubOption value)? quizhubOption,
+    TResult Function(WebviewOption value)? webviewOption,
+    TResult Function(NoInternetOption value)? noInternetOption,
+    required TResult orElse(),
+  }) {
+    if (webviewOption != null) {
+      return webviewOption(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class WebviewOption implements WebviewActorState {
+  const factory WebviewOption(final String url) = _$WebviewOption;
+
+  String get url;
+  @JsonKey(ignore: true)
+  _$$WebviewOptionCopyWith<_$WebviewOption> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$NoInternetOptionCopyWith<$Res> {
+  factory _$$NoInternetOptionCopyWith(
+          _$NoInternetOption value, $Res Function(_$NoInternetOption) then) =
+      __$$NoInternetOptionCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$NoInternetOptionCopyWithImpl<$Res>
+    extends _$WebviewActorStateCopyWithImpl<$Res, _$NoInternetOption>
+    implements _$$NoInternetOptionCopyWith<$Res> {
+  __$$NoInternetOptionCopyWithImpl(
+      _$NoInternetOption _value, $Res Function(_$NoInternetOption) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$NoInternetOption implements NoInternetOption {
+  const _$NoInternetOption();
+
+  @override
+  String toString() {
+    return 'WebviewActorState.noInternetOption()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$NoInternetOption);
   }
 
   @override
@@ -479,32 +791,35 @@ class _$Webview implements Webview {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
-    required TResult Function() quizhub,
-    required TResult Function() webview,
+    required TResult Function() quizhubOption,
+    required TResult Function(String url) webviewOption,
+    required TResult Function() noInternetOption,
   }) {
-    return webview();
+    return noInternetOption();
   }
 
   @override
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? initial,
-    TResult? Function()? quizhub,
-    TResult? Function()? webview,
+    TResult? Function()? quizhubOption,
+    TResult? Function(String url)? webviewOption,
+    TResult? Function()? noInternetOption,
   }) {
-    return webview?.call();
+    return noInternetOption?.call();
   }
 
   @override
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? initial,
-    TResult Function()? quizhub,
-    TResult Function()? webview,
+    TResult Function()? quizhubOption,
+    TResult Function(String url)? webviewOption,
+    TResult Function()? noInternetOption,
     required TResult orElse(),
   }) {
-    if (webview != null) {
-      return webview();
+    if (noInternetOption != null) {
+      return noInternetOption();
     }
     return orElse();
   }
@@ -513,37 +828,40 @@ class _$Webview implements Webview {
   @optionalTypeArgs
   TResult map<TResult extends Object?>({
     required TResult Function(Initial value) initial,
-    required TResult Function(Quizhub value) quizhub,
-    required TResult Function(Webview value) webview,
+    required TResult Function(QuizhubOption value) quizhubOption,
+    required TResult Function(WebviewOption value) webviewOption,
+    required TResult Function(NoInternetOption value) noInternetOption,
   }) {
-    return webview(this);
+    return noInternetOption(this);
   }
 
   @override
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(Initial value)? initial,
-    TResult? Function(Quizhub value)? quizhub,
-    TResult? Function(Webview value)? webview,
+    TResult? Function(QuizhubOption value)? quizhubOption,
+    TResult? Function(WebviewOption value)? webviewOption,
+    TResult? Function(NoInternetOption value)? noInternetOption,
   }) {
-    return webview?.call(this);
+    return noInternetOption?.call(this);
   }
 
   @override
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(Initial value)? initial,
-    TResult Function(Quizhub value)? quizhub,
-    TResult Function(Webview value)? webview,
+    TResult Function(QuizhubOption value)? quizhubOption,
+    TResult Function(WebviewOption value)? webviewOption,
+    TResult Function(NoInternetOption value)? noInternetOption,
     required TResult orElse(),
   }) {
-    if (webview != null) {
-      return webview(this);
+    if (noInternetOption != null) {
+      return noInternetOption(this);
     }
     return orElse();
   }
 }
 
-abstract class Webview implements WebviewActorState {
-  const factory Webview() = _$Webview;
+abstract class NoInternetOption implements WebviewActorState {
+  const factory NoInternetOption() = _$NoInternetOption;
 }

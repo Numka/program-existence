@@ -2,7 +2,6 @@ import 'package:bloc/bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 import '../../domain/quizzes/quiz.dart';
-import '../../infrastructure/network/remote_server.dart';
 
 part 'quiz_actor_event.dart';
 part 'quiz_actor_state.dart';
@@ -22,9 +21,5 @@ class QuizActorBloc extends Bloc<QuizActorEvent, QuizActorState> {
       }
       emit(state.copyWith(questionIndex: newIndex, score: newScore, isFetching: false));
     });
-    // on<IncorrectAnswer>((event, emit) {
-    //   final newIndex = state.questionIndex + 1;
-    //   emit(state.copyWith(questionIndex: newIndex, isFetching: false));
-    // });
   }
 }

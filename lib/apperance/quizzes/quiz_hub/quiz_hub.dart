@@ -47,7 +47,7 @@ class QuizHub extends StatelessWidget {
                     onPressed: () {
                       context.read<QuizFetcherBloc>().add(const QuizFetcherEvent.startedFetching());
                     },
-                    child: const Text('Fetch quiz'),
+                    child: const Text('Play quiz'),
                   ),
                 ],
               ),

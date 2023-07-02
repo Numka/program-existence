@@ -17,26 +17,21 @@ class QuizPlay extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocProvider(
       create: (context) => QuizActorBloc()..add(QuizActorEvent.startedPlaying(quiz)),
-      child: BlocListener<QuizActorBloc, QuizActorState>(
-        listener: (context, state) {
-          // TODO: implement listener
-        },
-        child: Scaffold(
-          appBar: AppBar(
-            title: const Text('Quiz play'),
-          ),
-          body: BlocBuilder<QuizActorBloc, QuizActorState>(
-            //buildWhen: (previous, current) => previous.questionIndex != current.questionIndex,
-            builder: (context, state) {
-              return state.quiz.questions.isEmpty
-                  ? const Center(
-                      child: CircularProgressIndicator(),
-                    )
-                  : QuizPlayArea(
-                      state: state,
-                    );
-            },
-          ),
+      child: Scaffold(
+        appBar: AppBar(
+          title: const Text('Quiz play'),
+        ),
+        body: BlocBuilder<QuizActorBloc, QuizActorState>(
+          //buildWhen: (previous, current) => previous.questionIndex != current.questionIndex,
+          builder: (context, state) {
+            return state.quiz.questions.isEmpty
+                ? const Center(
+                    child: CircularProgressIndicator(),
+                  )
+                : QuizPlayArea(
+                    state: state,
+                  );
+          },
         ),
       ),
     );

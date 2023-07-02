@@ -1,16 +1,71 @@
-import 'package:bloc/bloc.dart';
-import 'package:freezed_annotation/freezed_annotation.dart';
+// ignore_for_file: public_member_api_docs, sort_constructors_first
+import 'dart:io';
 
+import 'package:bloc/bloc.dart';
+import 'package:device_info_plus/device_info_plus.dart';
+import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+
+import '../../infrastructure/network/remoteconfig_repository.dart';
+
+part 'webview_actor_bloc.freezed.dart';
 part 'webview_actor_event.dart';
 part 'webview_actor_state.dart';
-part 'webview_actor_bloc.freezed.dart';
 
 class WebviewActorBloc extends Bloc<WebviewActorEvent, WebviewActorState> {
-  WebviewActorBloc() : super(const WebviewActorState.initial()) {
-    on<LinkCheckRequested>((event, emit) {
-      // TODO: load remote config link
-      emit(const WebviewActorState.quizhub());
-      // else emit(const WebviewActorState.webview());
+  RemoteConfigRepository repository;
+
+  WebviewActorBloc(
+    this.repository,
+  ) : super(const WebviewActorState.initial()) {
+    on<LinkCheckRequested>((event, emit) async {
+      final prefs = await SharedPreferences.getInstance();
+      final prefsLink = prefs.getString('url') ?? '';
+
+      if (prefsLink.isNotEmpty) {
+        await isConnected()
+            ? emit(WebviewActorState.webviewOption(prefsLink))
+            : emit(const WebviewActorState.noInternetOption());
+      } else {
+        await repository.initializeConfig();
+        final link = await repository.getRemoteConfigLink();
+
+        if (link == null) {
+          emit(const WebviewActorState.noInternetOption());
+        } else {
+          prefs.setString('url', link);
+
+          await isEmulator() || link.isEmpty
+              ? emit(const WebviewActorState.quizhubOption())
+              : emit(WebviewActorState.webviewOption(link));
+        }
+      }
     });
+  }
+}
+
+Future<bool> isEmulator() async {
+  DeviceInfoPlugin deviceInfo = DeviceInfoPlugin();
+  bool isAndroidEmulator = true;
+  bool isIOSEmulator = true;
+
+  if (Platform.isAndroid) {
+    var androidInfo = await deviceInfo.androidInfo;
+    if (androidInfo.isPhysicalDevice) isAndroidEmulator = false;
+  }
+  if (Platform.isIOS) {
+    var iosInfo = await deviceInfo.iosInfo;
+    if (iosInfo.isPhysicalDevice) isIOSEmulator = false;
+  }
+
+  return isAndroidEmulator || isIOSEmulator ? true : false;
+}
+
+Future<bool> isConnected() async {
+  try {
+    final result = await InternetAddress.lookup('example.com').timeout(const Duration(seconds: 2));
+    return result.isNotEmpty && result[0].rawAddress.isNotEmpty;
+  } on SocketException catch (_) {
+    return false;
   }
 }
