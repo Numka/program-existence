@@ -46,16 +46,22 @@ class WebviewActorBloc extends Bloc<WebviewActorEvent, WebviewActorState> {
 
 Future<bool> isEmulator() async {
   DeviceInfoPlugin deviceInfo = DeviceInfoPlugin();
-  bool isAndroidEmulator = true;
-  bool isIOSEmulator = true;
+  late bool isAndroidEmulator;
+  late bool isIOSEmulator;
 
   if (Platform.isAndroid) {
-    var androidInfo = await deviceInfo.androidInfo;
-    if (androidInfo.isPhysicalDevice) isAndroidEmulator = false;
+    final androidInfo = await deviceInfo.androidInfo;
+    if (androidInfo.isPhysicalDevice) {
+      isAndroidEmulator = false;
+      isIOSEmulator = false;
+    }
   }
   if (Platform.isIOS) {
-    var iosInfo = await deviceInfo.iosInfo;
-    if (iosInfo.isPhysicalDevice) isIOSEmulator = false;
+    final iosInfo = await deviceInfo.iosInfo;
+    if (iosInfo.isPhysicalDevice) {
+      isAndroidEmulator = false;
+      isIOSEmulator = false;
+    }
   }
 
   return isAndroidEmulator || isIOSEmulator ? true : false;
