@@ -6,17 +6,19 @@ class NoInternet extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: const [
-            Text(
-              'Internet connection is required to proceed',
-              style: TextStyle(fontSize: 18),
-            ),
-            SizedBox(height: 8),
-            CircularProgressIndicator(),
-          ],
+      body: SafeArea(
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: const [
+              Text(
+                'Internet connection is required to proceed',
+                style: TextStyle(fontSize: 18),
+              ),
+              SizedBox(height: 8),
+              CircularProgressIndicator(),
+            ],
+          ),
         ),
       ),
     );
