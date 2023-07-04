@@ -8,6 +8,7 @@ class NoInternet extends StatelessWidget {
     return Scaffold(
       body: Center(
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: const [
             Text(
               'Internet connection is required to proceed',
