@@ -11,14 +11,14 @@ class WebViewApp extends StatefulWidget {
 }
 
 class _WebViewAppState extends State<WebViewApp> {
-  late final InAppWebViewController controller;
+  late final InAppWebViewController _controller;
 
   @override
   Widget build(BuildContext context) {
-    return WillPopScope(
-      onWillPop: _onBackPressed,
-      child: Scaffold(
-        body: SafeArea(
+    return Scaffold(
+      body: SafeArea(
+        child: WillPopScope(
+          onWillPop: _onBackPressed,
           child: Column(
             children: [
               Expanded(
@@ -33,7 +33,7 @@ class _WebViewAppState extends State<WebViewApp> {
                         ),
                       ),
                       onWebViewCreated: (controller) {
-                        controller = controller;
+                        _controller = controller;
                       },
                       androidOnPermissionRequest: (
                         InAppWebViewController controller,
@@ -57,9 +57,11 @@ class _WebViewAppState extends State<WebViewApp> {
   }
 
   Future<bool> _onBackPressed() async {
-    if (await controller.canGoBack()) {
-      controller.goBack();
+    if (await _controller.canGoBack()) {
+      _controller.goBack();
+      return false;
+    } else {
+      return false;
     }
-    return false;
   }
 }
