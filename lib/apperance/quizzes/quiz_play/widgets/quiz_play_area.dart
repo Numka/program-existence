@@ -16,13 +16,12 @@ class QuizPlayArea extends StatelessWidget {
   Widget build(BuildContext context) {
     return Builder(
       builder: (context) {
+        if (state.quiz.questions.length <= state.questionIndex) return QuizOver(state: state);
         final question = state.quiz.questions[state.questionIndex];
         final List<String> answers = [question.correctAnswer, ...question.incorrectAnswers];
         answers.shuffle();
 
-        return state.quiz.questions.length - 1 == state.questionIndex
-            ? QuizOver(state: state)
-            : QuizControls(state: state, question: question, answers: answers);
+        return QuizControls(state: state, question: question, answers: answers);
       },
     );
   }
