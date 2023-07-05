@@ -21,5 +21,8 @@ class QuizActorBloc extends Bloc<QuizActorEvent, QuizActorState> {
       }
       emit(state.copyWith(questionIndex: newIndex, score: newScore, isFetching: false));
     });
+    on<PlayAgain>((event, emit) {
+      emit(state.copyWith(score: 0, questionIndex: 0));
+    });
   }
 }

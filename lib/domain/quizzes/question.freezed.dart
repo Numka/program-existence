@@ -24,6 +24,7 @@ mixin _$Question {
   String get question => throw _privateConstructorUsedError;
   String get correctAnswer => throw _privateConstructorUsedError;
   List<String> get incorrectAnswers => throw _privateConstructorUsedError;
+  String get image => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -40,7 +41,8 @@ abstract class $QuestionCopyWith<$Res> {
       {String id,
       String question,
       String correctAnswer,
-      List<String> incorrectAnswers});
+      List<String> incorrectAnswers,
+      String image});
 }
 
 /// @nodoc
@@ -60,6 +62,7 @@ class _$QuestionCopyWithImpl<$Res, $Val extends Question>
     Object? question = null,
     Object? correctAnswer = null,
     Object? incorrectAnswers = null,
+    Object? image = null,
   }) {
     return _then(_value.copyWith(
       id: null == id
@@ -78,6 +81,10 @@ class _$QuestionCopyWithImpl<$Res, $Val extends Question>
           ? _value.incorrectAnswers
           : incorrectAnswers // ignore: cast_nullable_to_non_nullable
               as List<String>,
+      image: null == image
+          ? _value.image
+          : image // ignore: cast_nullable_to_non_nullable
+              as String,
     ) as $Val);
   }
 }
@@ -93,7 +100,8 @@ abstract class _$$_QuestionCopyWith<$Res> implements $QuestionCopyWith<$Res> {
       {String id,
       String question,
       String correctAnswer,
-      List<String> incorrectAnswers});
+      List<String> incorrectAnswers,
+      String image});
 }
 
 /// @nodoc
@@ -111,6 +119,7 @@ class __$$_QuestionCopyWithImpl<$Res>
     Object? question = null,
     Object? correctAnswer = null,
     Object? incorrectAnswers = null,
+    Object? image = null,
   }) {
     return _then(_$_Question(
       id: null == id
@@ -129,6 +138,10 @@ class __$$_QuestionCopyWithImpl<$Res>
           ? _value._incorrectAnswers
           : incorrectAnswers // ignore: cast_nullable_to_non_nullable
               as List<String>,
+      image: null == image
+          ? _value.image
+          : image // ignore: cast_nullable_to_non_nullable
+              as String,
     ));
   }
 }
@@ -140,7 +153,8 @@ class _$_Question extends _Question {
       {required this.id,
       required this.question,
       required this.correctAnswer,
-      required final List<String> incorrectAnswers})
+      required final List<String> incorrectAnswers,
+      required this.image})
       : _incorrectAnswers = incorrectAnswers,
         super._();
 
@@ -163,8 +177,11 @@ class _$_Question extends _Question {
   }
 
   @override
+  final String image;
+
+  @override
   String toString() {
-    return 'Question(id: $id, question: $question, correctAnswer: $correctAnswer, incorrectAnswers: $incorrectAnswers)';
+    return 'Question(id: $id, question: $question, correctAnswer: $correctAnswer, incorrectAnswers: $incorrectAnswers, image: $image)';
   }
 
   @override
@@ -178,13 +195,14 @@ class _$_Question extends _Question {
             (identical(other.correctAnswer, correctAnswer) ||
                 other.correctAnswer == correctAnswer) &&
             const DeepCollectionEquality()
-                .equals(other._incorrectAnswers, _incorrectAnswers));
+                .equals(other._incorrectAnswers, _incorrectAnswers) &&
+            (identical(other.image, image) || other.image == image));
   }
 
   @JsonKey(ignore: true)
   @override
   int get hashCode => Object.hash(runtimeType, id, question, correctAnswer,
-      const DeepCollectionEquality().hash(_incorrectAnswers));
+      const DeepCollectionEquality().hash(_incorrectAnswers), image);
 
   @JsonKey(ignore: true)
   @override
@@ -205,7 +223,8 @@ abstract class _Question extends Question {
       {required final String id,
       required final String question,
       required final String correctAnswer,
-      required final List<String> incorrectAnswers}) = _$_Question;
+      required final List<String> incorrectAnswers,
+      required final String image}) = _$_Question;
   const _Question._() : super._();
 
   factory _Question.fromJson(Map<String, dynamic> json) = _$_Question.fromJson;
@@ -218,6 +237,8 @@ abstract class _Question extends Question {
   String get correctAnswer;
   @override
   List<String> get incorrectAnswers;
+  @override
+  String get image;
   @override
   @JsonKey(ignore: true)
   _$$_QuestionCopyWith<_$_Question> get copyWith =>

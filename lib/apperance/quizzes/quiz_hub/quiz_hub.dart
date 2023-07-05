@@ -7,6 +7,7 @@ import 'package:program_existence/infrastructure/network/rest_api.dart';
 
 import '../../../application/quiz_fetcher/quiz_fetcher_bloc.dart';
 import '../../../domain/quizzes/quiz.dart';
+import 'widgets/play_button.dart';
 
 class QuizHub extends StatelessWidget {
   const QuizHub({super.key});
@@ -35,24 +36,38 @@ class QuizHub extends StatelessWidget {
             orElse: () {},
           );
         },
-        child: Scaffold(
-          appBar: AppBar(
-            title: const Text('Quiz Hub'),
+        child: SafeArea(
+          child: Scaffold(
+            body: Builder(
+              builder: (context) {
+                return Stack(
+                  children: [
+                    Container(
+                      decoration: const BoxDecoration(
+                        image: DecorationImage(
+                          image: AssetImage("assets/images/sporty_background.png"),
+                          fit: BoxFit.cover,
+                        ),
+                      ),
+                    ),
+                    Center(
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          PlayButton(
+                            buttonText: "Play quiz",
+                            callback: () {
+                              context.read<QuizFetcherBloc>().add(const QuizFetcherEvent.startedFetching());
+                            },
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                );
+              },
+            ),
           ),
-          body: Builder(builder: (context) {
-            return Center(
-              child: Column(
-                children: [
-                  ElevatedButton(
-                    onPressed: () {
-                      context.read<QuizFetcherBloc>().add(const QuizFetcherEvent.startedFetching());
-                    },
-                    child: const Text('Play quiz'),
-                  ),
-                ],
-              ),
-            );
-          }),
         ),
       ),
     );

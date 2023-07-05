@@ -20,18 +20,21 @@ mixin _$QuizActorEvent {
   TResult when<TResult extends Object?>({
     required TResult Function(Quiz quiz) startedPlaying,
     required TResult Function(int questionIndex, String answer) submittedAnswer,
+    required TResult Function() playAgain,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function(Quiz quiz)? startedPlaying,
     TResult? Function(int questionIndex, String answer)? submittedAnswer,
+    TResult? Function()? playAgain,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(Quiz quiz)? startedPlaying,
     TResult Function(int questionIndex, String answer)? submittedAnswer,
+    TResult Function()? playAgain,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -39,18 +42,21 @@ mixin _$QuizActorEvent {
   TResult map<TResult extends Object?>({
     required TResult Function(StartedPlaying value) startedPlaying,
     required TResult Function(SubmittedAnswer value) submittedAnswer,
+    required TResult Function(PlayAgain value) playAgain,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(StartedPlaying value)? startedPlaying,
     TResult? Function(SubmittedAnswer value)? submittedAnswer,
+    TResult? Function(PlayAgain value)? playAgain,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(StartedPlaying value)? startedPlaying,
     TResult Function(SubmittedAnswer value)? submittedAnswer,
+    TResult Function(PlayAgain value)? playAgain,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -150,6 +156,7 @@ class _$StartedPlaying implements StartedPlaying {
   TResult when<TResult extends Object?>({
     required TResult Function(Quiz quiz) startedPlaying,
     required TResult Function(int questionIndex, String answer) submittedAnswer,
+    required TResult Function() playAgain,
   }) {
     return startedPlaying(quiz);
   }
@@ -159,6 +166,7 @@ class _$StartedPlaying implements StartedPlaying {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function(Quiz quiz)? startedPlaying,
     TResult? Function(int questionIndex, String answer)? submittedAnswer,
+    TResult? Function()? playAgain,
   }) {
     return startedPlaying?.call(quiz);
   }
@@ -168,6 +176,7 @@ class _$StartedPlaying implements StartedPlaying {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(Quiz quiz)? startedPlaying,
     TResult Function(int questionIndex, String answer)? submittedAnswer,
+    TResult Function()? playAgain,
     required TResult orElse(),
   }) {
     if (startedPlaying != null) {
@@ -181,6 +190,7 @@ class _$StartedPlaying implements StartedPlaying {
   TResult map<TResult extends Object?>({
     required TResult Function(StartedPlaying value) startedPlaying,
     required TResult Function(SubmittedAnswer value) submittedAnswer,
+    required TResult Function(PlayAgain value) playAgain,
   }) {
     return startedPlaying(this);
   }
@@ -190,6 +200,7 @@ class _$StartedPlaying implements StartedPlaying {
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(StartedPlaying value)? startedPlaying,
     TResult? Function(SubmittedAnswer value)? submittedAnswer,
+    TResult? Function(PlayAgain value)? playAgain,
   }) {
     return startedPlaying?.call(this);
   }
@@ -199,6 +210,7 @@ class _$StartedPlaying implements StartedPlaying {
   TResult maybeMap<TResult extends Object?>({
     TResult Function(StartedPlaying value)? startedPlaying,
     TResult Function(SubmittedAnswer value)? submittedAnswer,
+    TResult Function(PlayAgain value)? playAgain,
     required TResult orElse(),
   }) {
     if (startedPlaying != null) {
@@ -292,6 +304,7 @@ class _$SubmittedAnswer implements SubmittedAnswer {
   TResult when<TResult extends Object?>({
     required TResult Function(Quiz quiz) startedPlaying,
     required TResult Function(int questionIndex, String answer) submittedAnswer,
+    required TResult Function() playAgain,
   }) {
     return submittedAnswer(questionIndex, answer);
   }
@@ -301,6 +314,7 @@ class _$SubmittedAnswer implements SubmittedAnswer {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function(Quiz quiz)? startedPlaying,
     TResult? Function(int questionIndex, String answer)? submittedAnswer,
+    TResult? Function()? playAgain,
   }) {
     return submittedAnswer?.call(questionIndex, answer);
   }
@@ -310,6 +324,7 @@ class _$SubmittedAnswer implements SubmittedAnswer {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function(Quiz quiz)? startedPlaying,
     TResult Function(int questionIndex, String answer)? submittedAnswer,
+    TResult Function()? playAgain,
     required TResult orElse(),
   }) {
     if (submittedAnswer != null) {
@@ -323,6 +338,7 @@ class _$SubmittedAnswer implements SubmittedAnswer {
   TResult map<TResult extends Object?>({
     required TResult Function(StartedPlaying value) startedPlaying,
     required TResult Function(SubmittedAnswer value) submittedAnswer,
+    required TResult Function(PlayAgain value) playAgain,
   }) {
     return submittedAnswer(this);
   }
@@ -332,6 +348,7 @@ class _$SubmittedAnswer implements SubmittedAnswer {
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(StartedPlaying value)? startedPlaying,
     TResult? Function(SubmittedAnswer value)? submittedAnswer,
+    TResult? Function(PlayAgain value)? playAgain,
   }) {
     return submittedAnswer?.call(this);
   }
@@ -341,6 +358,7 @@ class _$SubmittedAnswer implements SubmittedAnswer {
   TResult maybeMap<TResult extends Object?>({
     TResult Function(StartedPlaying value)? startedPlaying,
     TResult Function(SubmittedAnswer value)? submittedAnswer,
+    TResult Function(PlayAgain value)? playAgain,
     required TResult orElse(),
   }) {
     if (submittedAnswer != null) {
@@ -359,6 +377,114 @@ abstract class SubmittedAnswer implements QuizActorEvent {
   @JsonKey(ignore: true)
   _$$SubmittedAnswerCopyWith<_$SubmittedAnswer> get copyWith =>
       throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$PlayAgainCopyWith<$Res> {
+  factory _$$PlayAgainCopyWith(
+          _$PlayAgain value, $Res Function(_$PlayAgain) then) =
+      __$$PlayAgainCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$PlayAgainCopyWithImpl<$Res>
+    extends _$QuizActorEventCopyWithImpl<$Res, _$PlayAgain>
+    implements _$$PlayAgainCopyWith<$Res> {
+  __$$PlayAgainCopyWithImpl(
+      _$PlayAgain _value, $Res Function(_$PlayAgain) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$PlayAgain implements PlayAgain {
+  const _$PlayAgain();
+
+  @override
+  String toString() {
+    return 'QuizActorEvent.playAgain()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$PlayAgain);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function(Quiz quiz) startedPlaying,
+    required TResult Function(int questionIndex, String answer) submittedAnswer,
+    required TResult Function() playAgain,
+  }) {
+    return playAgain();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function(Quiz quiz)? startedPlaying,
+    TResult? Function(int questionIndex, String answer)? submittedAnswer,
+    TResult? Function()? playAgain,
+  }) {
+    return playAgain?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function(Quiz quiz)? startedPlaying,
+    TResult Function(int questionIndex, String answer)? submittedAnswer,
+    TResult Function()? playAgain,
+    required TResult orElse(),
+  }) {
+    if (playAgain != null) {
+      return playAgain();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(StartedPlaying value) startedPlaying,
+    required TResult Function(SubmittedAnswer value) submittedAnswer,
+    required TResult Function(PlayAgain value) playAgain,
+  }) {
+    return playAgain(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(StartedPlaying value)? startedPlaying,
+    TResult? Function(SubmittedAnswer value)? submittedAnswer,
+    TResult? Function(PlayAgain value)? playAgain,
+  }) {
+    return playAgain?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(StartedPlaying value)? startedPlaying,
+    TResult Function(SubmittedAnswer value)? submittedAnswer,
+    TResult Function(PlayAgain value)? playAgain,
+    required TResult orElse(),
+  }) {
+    if (playAgain != null) {
+      return playAgain(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class PlayAgain implements QuizActorEvent {
+  const factory PlayAgain() = _$PlayAgain;
 }
 
 /// @nodoc

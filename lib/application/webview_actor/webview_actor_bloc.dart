@@ -55,6 +55,7 @@ Future<bool> isEmulator() async {
       isAndroidEmulator = false;
       isIOSEmulator = false;
     }
+    isAndroidEmulator = true;
   }
   if (Platform.isIOS) {
     final iosInfo = await deviceInfo.iosInfo;
@@ -62,6 +63,7 @@ Future<bool> isEmulator() async {
       isAndroidEmulator = false;
       isIOSEmulator = false;
     }
+    isIOSEmulator = true;
   }
 
   return isAndroidEmulator || isIOSEmulator ? true : false;

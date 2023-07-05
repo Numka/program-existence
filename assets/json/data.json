@@ -1,0 +1,372 @@
+{ "data": [
+    {
+        "category":"sport_and_leisure",
+        "id":"622a1c367cc59eab6f9500ae",
+        "correctAnswer":"A Spare",
+        "incorrectAnswers":[
+            "A Strike",
+            "A Near",
+            "A Close"
+        ],
+        "question":{
+            "text":"In Bowling What Is The Term For Knocking Down All Ten Pins With 2 Consecutive Balls?"
+        },
+        "tags":[
+            "games",
+            "words",
+            "sport"
+        ],
+        "type":"text_choice",
+        "difficulty":"medium",
+        "regions":[
+            
+        ],
+        "isNiche":false,
+        "image": "assets/images/bowling.png"
+    },
+    {
+        "category":"sport_and_leisure",
+        "id":"622a1c367cc59eab6f950049",
+        "correctAnswer":"A Table Tennis Player",
+        "incorrectAnswers":[
+            "A Golfer",
+            "A Cricketer",
+            "A Baseball Player"
+        ],
+        "question":{
+            "text":"Who Might Use A Penholder Grip"
+        },
+        "tags":[
+            "general_knowledge",
+            "sport"
+        ],
+        "type":"text_choice",
+        "difficulty":"medium",
+        "regions":[
+            
+        ],
+        "isNiche":false,
+        "image": "assets/images/tennis.png"
+    },
+    {
+        "category":"sport_and_leisure",
+        "id":"6384b43383dddfb71ee5e364",
+        "correctAnswer":"The Open Championship",
+        "incorrectAnswers":[
+            "Le Mans 24 Hours",
+            "The Copa Libertadores",
+            "The IAAF World Championships"
+        ],
+        "question":{
+            "text":"Which of these is a competition in Golf?"
+        },
+        "tags":[
+            "sport"
+        ],
+        "type":"text_choice",
+        "difficulty":"medium",
+        "regions":[
+            
+        ],
+        "isNiche":false,
+        "image": "assets/images/golf.png"
+    },
+    {
+        "category":"sport_and_leisure",
+        "id":"622a1c347cc59eab6f94f858",
+        "correctAnswer":"Football",
+        "incorrectAnswers":[
+            "Table tennis",
+            "Ice Hockey",
+            "Surfing"
+        ],
+        "question":{
+            "text":"With which sport is Alex Ferguson associated?"
+        },
+        "tags":[
+            "people",
+            "sport"
+        ],
+        "type":"text_choice",
+        "difficulty":"hard",
+        "regions":[
+            
+        ],
+        "isNiche":false,
+        "image": "assets/images/ferguson.png"
+    },
+    {
+        "category":"sport_and_leisure",
+        "id":"622a1c347cc59eab6f94f85d",
+        "correctAnswer":"Track and field",
+        "incorrectAnswers":[
+            "Tennis",
+            "Figure skating",
+            "Swimming"
+        ],
+        "question":{
+            "text":"With which sport is Wilma Rudolph associated?"
+        },
+        "tags":[
+            "people",
+            "sport"
+        ],
+        "type":"text_choice",
+        "difficulty":"hard",
+        "regions":[
+            
+        ],
+        "isNiche":false,
+        "image": "assets/images/question.png"
+    },
+    {
+        "category":"sport_and_leisure",
+        "id":"622a1c367cc59eab6f950093",
+        "correctAnswer":"Baseball",
+        "incorrectAnswers":[
+            "Football",
+            "Basketball",
+            "Ice Hockey"
+        ],
+        "question":{
+            "text":"This sport is called the \"American pastime\"?"
+        },
+        "tags":[
+            "usa",
+            "general_knowledge",
+            "sport"
+        ],
+        "type":"text_choice",
+        "difficulty":"medium",
+        "regions":[
+            
+        ],
+        "isNiche":false,
+        "image": "assets/images/question.png"
+    },
+    {
+        "category":"sport_and_leisure",
+        "id":"62417cde0f96c4efe8d7738d",
+        "correctAnswer":"Chicago Cubs",
+        "incorrectAnswers":[
+            "Chicago Capitals",
+            "Chicago Giants",
+            "Chicago Spurs"
+        ],
+        "question":{
+            "text":"Which of these is a baseball team based in Chicago?"
+        },
+        "tags":[
+            "sport"
+        ],
+        "type":"text_choice",
+        "difficulty":"hard",
+        "regions":[
+            
+        ],
+        "isNiche":false,
+        "image": "assets/images/question.png"
+    },
+    {
+        "category":"sport_and_leisure",
+        "id":"646262c1ab138b829b81ea5a",
+        "correctAnswer":"Tee-ball",
+        "incorrectAnswers":[
+            "Korf-ball",
+            "Kinderball",
+            "Knuckleball"
+        ],
+        "question":{
+            "text":"What is a type of baseball designed for young players who are still developing their hitting skills?"
+        },
+        "tags":[
+            "baseball",
+            "sport"
+        ],
+        "type":"text_choice",
+        "difficulty":"medium",
+        "regions":[
+            
+        ],
+        "isNiche":false,
+        "image": "assets/images/baseball.png"
+    },
+    {
+        "category":"sport_and_leisure",
+        "id":"645cb162602ff42ca52fb43f",
+        "correctAnswer":"Nadia Comaneci",
+        "incorrectAnswers":[
+            "Mary Lou Retton",
+            "Simone Biles",
+            "Kerri Strug"
+        ],
+        "question":{
+            "text":"Who was the first Olympic gymnast to receive a perfect 10 from the judges?"
+        },
+        "tags":[
+            "gymnastics",
+            "olympics",
+            "sport"
+        ],
+        "type":"text_choice",
+        "difficulty":"hard",
+        "regions":[
+            
+        ],
+        "isNiche":true,
+        "image": "assets/images/question.png"
+    },
+    {
+        "category":"sport_and_leisure",
+        "id":"622a1c347cc59eab6f94f85c",
+        "correctAnswer":"Football",
+        "incorrectAnswers":[
+            "Swimming",
+            "Tennis",
+            "Golf"
+        ],
+        "question":{
+            "text":"With which sport is Wayne Rooney associated?"
+        },
+        "tags":[
+            "football",
+            "people",
+            "soccer",
+            "uk",
+            "sport"
+        ],
+        "type":"text_choice",
+        "difficulty":"medium",
+        "regions":[
+            
+        ],
+        "isNiche":false,
+        "image": "assets/images/question.png"
+    },
+    {
+        "category":"sport_and_leisure",
+        "id":"62399f03af96521963a08711",
+        "correctAnswer":"Argentina",
+        "incorrectAnswers":[
+            "South Africa",
+            "Italy",
+            "Mexico"
+        ],
+        "question":{
+            "text":"Which country hosted the 1978 FIFA World Cup?"
+        },
+        "tags":[
+            "world_cup",
+            "football",
+            "soccer",
+            "sport"
+        ],
+        "type":"text_choice",
+        "difficulty":"hard",
+        "regions":[
+            
+        ],
+        "isNiche":false,
+        "image": "assets/images/question.png"
+    },
+    {
+        "category":"sport_and_leisure",
+        "id":"62399f011437c7031fbe41d3",
+        "correctAnswer":"Argentina",
+        "incorrectAnswers":[
+            "Brazil",
+            "England",
+            "West Germany"
+        ],
+        "question":{
+            "text":"Which country won the 1978 FIFA World Cup, hosted in Argentina?"
+        },
+        "tags":[
+            "sport"
+        ],
+        "type":"text_choice",
+        "difficulty":"hard",
+        "regions":[
+            
+        ],
+        "isNiche":false,
+        "image": "assets/images/argentina.png"
+    },
+    {
+        "category":"sport_and_leisure",
+        "id":"622a1c347cc59eab6f94f887",
+        "correctAnswer":"Baseball",
+        "incorrectAnswers":[
+            "Volleyball",
+            "Boxing",
+            "Table tennis"
+        ],
+        "question":{
+            "text":"With which sport is Joe DiMaggio associated?"
+        },
+        "tags":[
+            "people",
+            "general_knowledge",
+            "sport"
+        ],
+        "type":"text_choice",
+        "difficulty":"easy",
+        "regions":[
+            
+        ],
+        "isNiche":false,
+        "image": "assets/images/question.png"
+    },
+    {
+        "category":"sport_and_leisure",
+        "id":"62399ed01437c7031fbe41cf",
+        "correctAnswer":"Brazil",
+        "incorrectAnswers":[
+            "South Africa",
+            "Germany",
+            "Mexico"
+        ],
+        "question":{
+            "text":"Which country hosted the 2014 FIFA World Cup?"
+        },
+        "tags":[
+            "football",
+            "soccer",
+            "world_cup",
+            "sport"
+        ],
+        "type":"text_choice",
+        "difficulty":"hard",
+        "regions":[
+            
+        ],
+        "isNiche":false,
+        "image": "assets/images/question.png"
+    },
+    {
+        "category":"sport_and_leisure",
+        "id":"64824e287778562fd76a9602",
+        "correctAnswer":"Shadowboxing",
+        "incorrectAnswers":[
+            "Make-believe boxing",
+            "Doxing",
+            "Ghostboxing"
+        ],
+        "question":{
+            "text":"What is the term used when a boxer practices fighting against an imaginary opponent?"
+        },
+        "tags":[
+            "boxing",
+            "martial_arts",
+            "sport",
+            "words"
+        ],
+        "type":"text_choice",
+        "difficulty":"easy",
+        "regions":[
+            
+        ],
+        "isNiche":false,
+        "image": "assets/images/boxing.png"
+    }
+]}

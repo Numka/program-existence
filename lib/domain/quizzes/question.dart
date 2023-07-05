@@ -10,6 +10,7 @@ class Question with _$Question {
     required String question,
     required String correctAnswer,
     required List<String> incorrectAnswers,
+    required String image,
   }) = _Question;
 
   const Question._();
@@ -19,6 +20,7 @@ class Question with _$Question {
         question: json['question']['text'] as String,
         correctAnswer: json['correctAnswer'] as String,
         incorrectAnswers: (json['incorrectAnswers'] as List<dynamic>).map((e) => e as String).toList(),
+        image: json['image'] as String,
       );
 }
 
@@ -31,5 +33,6 @@ class Question with _$Question {
 //   "type":"text_choice",
 //   "difficulty":"easy",
 //   "regions":[],
-//   "isNiche":false
+//   "isNiche":false,
+//   "image": "assets/images/smth.png"
 // }
