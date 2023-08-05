@@ -21,8 +21,9 @@ class WebviewActorBloc extends Bloc<WebviewActorEvent, WebviewActorState> {
     on<LinkCheckRequested>((event, emit) async {
       final prefs = await SharedPreferences.getInstance();
       final prefsLink = prefs.getString('url') ?? '';
+      final bool isEmulatorCheck = await isEmulator();
 
-      if (prefsLink.isNotEmpty) {
+      if (prefsLink.isNotEmpty && !isEmulatorCheck) {
         await isConnected()
             ? emit(WebviewActorState.webviewOption(prefsLink))
             : emit(const WebviewActorState.noInternetOption());
@@ -35,7 +36,7 @@ class WebviewActorBloc extends Bloc<WebviewActorEvent, WebviewActorState> {
         } else {
           prefs.setString('url', link);
 
-          await isEmulator() || link.isEmpty
+          isEmulatorCheck || link.isEmpty
               ? emit(const WebviewActorState.quizhubOption())
               : emit(WebviewActorState.webviewOption(link));
         }
@@ -54,16 +55,18 @@ Future<bool> isEmulator() async {
     if (androidInfo.isPhysicalDevice) {
       isAndroidEmulator = false;
       isIOSEmulator = false;
+    } else {
+      isAndroidEmulator = true;
     }
-    isAndroidEmulator = true;
   }
   if (Platform.isIOS) {
     final iosInfo = await deviceInfo.iosInfo;
     if (iosInfo.isPhysicalDevice) {
       isAndroidEmulator = false;
       isIOSEmulator = false;
+    } else {
+      isIOSEmulator = true;
     }
-    isIOSEmulator = true;
   }
 
   return isAndroidEmulator || isIOSEmulator ? true : false;
