@@ -2,14 +2,14 @@
     {
         "category":"sport_and_leisure",
         "id":"622a1c367cc59eab6f9500ae",
-        "correctAnswer":"A Spare",
+        "correctAnswer":"John Cena",
         "incorrectAnswers":[
-            "A Strike",
-            "A Near",
-            "A Close"
+            "Roger Federer",
+            "Usain Bolt",
+            "Neymar Jr"
         ],
         "question":{
-            "text":"In Bowling What Is The Term For Knocking Down All Ten Pins With 2 Consecutive Balls?"
+            "text":"What is the name of this athlete?"
         },
         "tags":[
             "games",
@@ -22,19 +22,19 @@
             
         ],
         "isNiche":false,
-        "image": "assets/images/bowling.png"
+        "image": "assets/images/cena.jpg"
     },
     {
         "category":"sport_and_leisure",
         "id":"622a1c367cc59eab6f950049",
-        "correctAnswer":"A Table Tennis Player",
+        "correctAnswer":"Roger Federer",
         "incorrectAnswers":[
-            "A Golfer",
-            "A Cricketer",
-            "A Baseball Player"
+            "Muhammad Ali",
+            "Lionel Messi",
+            "Cristiano Ronaldo"
         ],
         "question":{
-            "text":"Who Might Use A Penholder Grip"
+            "text":"What is the name of this athlete?"
         },
         "tags":[
             "general_knowledge",
@@ -46,19 +46,19 @@
             
         ],
         "isNiche":false,
-        "image": "assets/images/tennis.png"
+        "image": "assets/images/federer.jpg"
     },
     {
         "category":"sport_and_leisure",
         "id":"6384b43383dddfb71ee5e364",
-        "correctAnswer":"The Open Championship",
+        "correctAnswer":"Michael Jordan",
         "incorrectAnswers":[
-            "Le Mans 24 Hours",
-            "The Copa Libertadores",
-            "The IAAF World Championships"
+            "Usain Bolt",
+            "Kobe Bryant",
+            "Roger Federer"
         ],
         "question":{
-            "text":"Which of these is a competition in Golf?"
+            "text":"What is the name of this athlete?"
         },
         "tags":[
             "sport"
@@ -69,19 +69,19 @@
             
         ],
         "isNiche":false,
-        "image": "assets/images/golf.png"
+        "image": "assets/images/jordan.jpg"
     },
     {
         "category":"sport_and_leisure",
         "id":"622a1c347cc59eab6f94f858",
-        "correctAnswer":"Football",
+        "correctAnswer":"Kobe Bryant",
         "incorrectAnswers":[
-            "Table tennis",
-            "Ice Hockey",
-            "Surfing"
+            "Cristiano Ronaldo",
+            "Lance Armstrong",
+            "Lionel Messi"
         ],
         "question":{
-            "text":"With which sport is Alex Ferguson associated?"
+            "text":"What is the name of this athlete?"
         },
         "tags":[
             "people",
@@ -93,19 +93,19 @@
             
         ],
         "isNiche":false,
-        "image": "assets/images/ferguson.png"
+        "image": "assets/images/kobybryant.jpg"
     },
     {
         "category":"sport_and_leisure",
         "id":"622a1c347cc59eab6f94f85d",
-        "correctAnswer":"Track and field",
+        "correctAnswer":"Lance Armstrong",
         "incorrectAnswers":[
-            "Tennis",
-            "Figure skating",
-            "Swimming"
+            "Cristiano Ronaldo",
+            "Conor McGregor",
+            "Lionel Messi"
         ],
         "question":{
-            "text":"With which sport is Wilma Rudolph associated?"
+            "text":"What is the name of this athlete?"
         },
         "tags":[
             "people",
@@ -117,19 +117,19 @@
             
         ],
         "isNiche":false,
-        "image": "assets/images/question.png"
+        "image": "assets/images/lance.jpg"
     },
     {
         "category":"sport_and_leisure",
         "id":"622a1c367cc59eab6f950093",
-        "correctAnswer":"Baseball",
+        "correctAnswer":"LeBron James",
         "incorrectAnswers":[
-            "Football",
-            "Basketball",
-            "Ice Hockey"
+            "Roger Federer",
+            "Neymar Jr",
+            "Usain Bolt"
         ],
         "question":{
-            "text":"This sport is called the \"American pastime\"?"
+            "text":"What is the name of this athlete?"
         },
         "tags":[
             "usa",
@@ -142,19 +142,19 @@
             
         ],
         "isNiche":false,
-        "image": "assets/images/question.png"
+        "image": "assets/images/lebron.jpg"
     },
     {
         "category":"sport_and_leisure",
         "id":"62417cde0f96c4efe8d7738d",
-        "correctAnswer":"Chicago Cubs",
+        "correctAnswer":"Lionel Messi",
         "incorrectAnswers":[
-            "Chicago Capitals",
-            "Chicago Giants",
-            "Chicago Spurs"
+            "Lance Armstrong",
+            "John Cena",
+            "Cristiano Ronaldo"
         ],
         "question":{
-            "text":"Which of these is a baseball team based in Chicago?"
+            "text":"What is the name of this athlete?"
         },
         "tags":[
             "sport"
@@ -165,19 +165,19 @@
             
         ],
         "isNiche":false,
-        "image": "assets/images/question.png"
+        "image": "assets/images/lionelmessi.jpg"
     },
     {
         "category":"sport_and_leisure",
         "id":"646262c1ab138b829b81ea5a",
-        "correctAnswer":"Tee-ball",
+        "correctAnswer":"Conor McGregor",
         "incorrectAnswers":[
-            "Korf-ball",
-            "Kinderball",
-            "Knuckleball"
+            "Neymar Jr",
+            "Roger Federer",
+            "Kobe Bryant"
         ],
         "question":{
-            "text":"What is a type of baseball designed for young players who are still developing their hitting skills?"
+            "text":"What is the name of this athlete?"
         },
         "tags":[
             "baseball",
@@ -189,19 +189,19 @@
             
         ],
         "isNiche":false,
-        "image": "assets/images/baseball.png"
+        "image": "assets/images/mcgregor.jpg"
     },
     {
         "category":"sport_and_leisure",
         "id":"645cb162602ff42ca52fb43f",
-        "correctAnswer":"Nadia Comaneci",
+        "correctAnswer":"Mike Tyson",
         "incorrectAnswers":[
-            "Mary Lou Retton",
-            "Simone Biles",
-            "Kerri Strug"
+            "LeBron James",
+            "Michael Jordan",
+            "Muhammad Ali"
         ],
         "question":{
-            "text":"Who was the first Olympic gymnast to receive a perfect 10 from the judges?"
+            "text":"What is the name of this athlete?"
         },
         "tags":[
             "gymnastics",
@@ -214,19 +214,19 @@
             
         ],
         "isNiche":true,
-        "image": "assets/images/question.png"
+        "image": "assets/images/miketyson.jpg"
     },
     {
         "category":"sport_and_leisure",
         "id":"622a1c347cc59eab6f94f85c",
-        "correctAnswer":"Football",
+        "correctAnswer":"Muhammad Ali",
         "incorrectAnswers":[
-            "Swimming",
-            "Tennis",
-            "Golf"
+            "Roger Federer",
+            "Usain Bolt",
+            "Kobe Bryant"
         ],
         "question":{
-            "text":"With which sport is Wayne Rooney associated?"
+            "text":"What is the name of this athlete?"
         },
         "tags":[
             "football",
@@ -241,19 +241,19 @@
             
         ],
         "isNiche":false,
-        "image": "assets/images/question.png"
+        "image": "assets/images/muhammedali.jpg"
     },
     {
         "category":"sport_and_leisure",
         "id":"62399f03af96521963a08711",
-        "correctAnswer":"Argentina",
+        "correctAnswer":"Neymar Jr",
         "incorrectAnswers":[
-            "South Africa",
-            "Italy",
-            "Mexico"
+            "Roger Federer",
+            "Usain Bolt",
+            "Lance Armstrong"
         ],
         "question":{
-            "text":"Which country hosted the 1978 FIFA World Cup?"
+            "text":"What is the name of this athlete?"
         },
         "tags":[
             "world_cup",
@@ -267,19 +267,19 @@
             
         ],
         "isNiche":false,
-        "image": "assets/images/question.png"
+        "image": "assets/images/neymarjr.jpg"
     },
     {
         "category":"sport_and_leisure",
         "id":"62399f011437c7031fbe41d3",
-        "correctAnswer":"Argentina",
+        "correctAnswer":"Cristiano Ronaldo",
         "incorrectAnswers":[
-            "Brazil",
-            "England",
-            "West Germany"
+            "Lance Armstrong",
+            "John Cena",
+            "Lionel Messi"
         ],
         "question":{
-            "text":"Which country won the 1978 FIFA World Cup, hosted in Argentina?"
+            "text":"What is the name of this athlete?"
         },
         "tags":[
             "sport"
@@ -290,19 +290,19 @@
             
         ],
         "isNiche":false,
-        "image": "assets/images/argentina.png"
+        "image": "assets/images/ronaldo.jpg"
     },
     {
         "category":"sport_and_leisure",
         "id":"622a1c347cc59eab6f94f887",
-        "correctAnswer":"Baseball",
+        "correctAnswer":"Usain Bolt",
         "incorrectAnswers":[
-            "Volleyball",
-            "Boxing",
-            "Table tennis"
+            "Muhammad Ali",
+            "Mike Tyson",
+            "Michael Jordan"
         ],
         "question":{
-            "text":"With which sport is Joe DiMaggio associated?"
+            "text":"What is the name of this athlete?"
         },
         "tags":[
             "people",
@@ -315,58 +315,6 @@
             
         ],
         "isNiche":false,
-        "image": "assets/images/question.png"
-    },
-    {
-        "category":"sport_and_leisure",
-        "id":"62399ed01437c7031fbe41cf",
-        "correctAnswer":"Brazil",
-        "incorrectAnswers":[
-            "South Africa",
-            "Germany",
-            "Mexico"
-        ],
-        "question":{
-            "text":"Which country hosted the 2014 FIFA World Cup?"
-        },
-        "tags":[
-            "football",
-            "soccer",
-            "world_cup",
-            "sport"
-        ],
-        "type":"text_choice",
-        "difficulty":"hard",
-        "regions":[
-            
-        ],
-        "isNiche":false,
-        "image": "assets/images/question.png"
-    },
-    {
-        "category":"sport_and_leisure",
-        "id":"64824e287778562fd76a9602",
-        "correctAnswer":"Shadowboxing",
-        "incorrectAnswers":[
-            "Make-believe boxing",
-            "Doxing",
-            "Ghostboxing"
-        ],
-        "question":{
-            "text":"What is the term used when a boxer practices fighting against an imaginary opponent?"
-        },
-        "tags":[
-            "boxing",
-            "martial_arts",
-            "sport",
-            "words"
-        ],
-        "type":"text_choice",
-        "difficulty":"easy",
-        "regions":[
-            
-        ],
-        "isNiche":false,
-        "image": "assets/images/boxing.png"
+        "image": "assets/images/usainbolt.jpg"
     }
 ]}

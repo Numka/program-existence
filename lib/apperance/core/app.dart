@@ -17,7 +17,7 @@ class Application extends StatelessWidget {
       create: (context) =>
           WebviewActorBloc(RemoteConfigRepository())..add(const WebviewActorEvent.linkCheckRequested()),
       child: MaterialApp(
-        title: 'Program existence test',
+        title: 'Quiz',
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
