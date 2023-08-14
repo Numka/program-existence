@@ -2,14 +2,14 @@
     {
         "category":"sport_and_leisure",
         "id":"622a1c367cc59eab6f9500ae",
-        "correctAnswer":"John Cena",
+        "correctAnswer":"Arnold Schwarzenegger",
         "incorrectAnswers":[
-            "Roger Federer",
-            "Usain Bolt",
-            "Neymar Jr"
+            "Johnny Depp",
+            "Harrison Ford",
+            "Tom Cruise"
         ],
         "question":{
-            "text":"What is the name of this athlete?"
+            "text":"What is the name of this actor?"
         },
         "tags":[
             "games",
@@ -22,19 +22,19 @@
             
         ],
         "isNiche":false,
-        "image": "assets/images/cena.jpg"
+        "image": "assets/images/arnoldschwarzenegger.jpg"
     },
     {
         "category":"sport_and_leisure",
         "id":"622a1c367cc59eab6f950049",
-        "correctAnswer":"Roger Federer",
+        "correctAnswer":"Brad Pitt",
         "incorrectAnswers":[
-            "Muhammad Ali",
-            "Lionel Messi",
-            "Cristiano Ronaldo"
+            "Leonardo DiCaprio",
+            "Chris Hemsworth",
+            "Robert Downey Jr."
         ],
         "question":{
-            "text":"What is the name of this athlete?"
+            "text":"What is the name of this actor?"
         },
         "tags":[
             "general_knowledge",
@@ -46,19 +46,19 @@
             
         ],
         "isNiche":false,
-        "image": "assets/images/federer.jpg"
+        "image": "assets/images/bradpitt.jpg"
     },
     {
         "category":"sport_and_leisure",
         "id":"6384b43383dddfb71ee5e364",
-        "correctAnswer":"Michael Jordan",
+        "correctAnswer":"Bruce Willis",
         "incorrectAnswers":[
-            "Usain Bolt",
-            "Kobe Bryant",
-            "Roger Federer"
+            "Tom Cruise",
+            "Chris Hemsworth",
+            "Harrison Ford"
         ],
         "question":{
-            "text":"What is the name of this athlete?"
+            "text":"What is the name of this actor?"
         },
         "tags":[
             "sport"
@@ -69,19 +69,19 @@
             
         ],
         "isNiche":false,
-        "image": "assets/images/jordan.jpg"
+        "image": "assets/images/brucewillis.jpg"
     },
     {
         "category":"sport_and_leisure",
         "id":"622a1c347cc59eab6f94f858",
-        "correctAnswer":"Kobe Bryant",
+        "correctAnswer":"Chris Hemsworth",
         "incorrectAnswers":[
-            "Cristiano Ronaldo",
-            "Lance Armstrong",
-            "Lionel Messi"
+            "Johnny Depp",
+            "Tom Cruise",
+            "Harrison Ford"
         ],
         "question":{
-            "text":"What is the name of this athlete?"
+            "text":"What is the name of this actor?"
         },
         "tags":[
             "people",
@@ -93,19 +93,19 @@
             
         ],
         "isNiche":false,
-        "image": "assets/images/kobybryant.jpg"
+        "image": "assets/images/chrishemsworth.jpg"
     },
     {
         "category":"sport_and_leisure",
         "id":"622a1c347cc59eab6f94f85d",
-        "correctAnswer":"Lance Armstrong",
+        "correctAnswer":"Harrison Ford",
         "incorrectAnswers":[
-            "Cristiano Ronaldo",
-            "Conor McGregor",
-            "Lionel Messi"
+            "Leonardo DiCaprio",
+            "Tom Cruise",
+            "Robert Downey Jr."
         ],
         "question":{
-            "text":"What is the name of this athlete?"
+            "text":"What is the name of this actor?"
         },
         "tags":[
             "people",
@@ -117,19 +117,19 @@
             
         ],
         "isNiche":false,
-        "image": "assets/images/lance.jpg"
+        "image": "assets/images/harrisonford.jpg"
     },
     {
         "category":"sport_and_leisure",
         "id":"622a1c367cc59eab6f950093",
-        "correctAnswer":"LeBron James",
+        "correctAnswer":"Jennifer Lawrence",
         "incorrectAnswers":[
-            "Roger Federer",
-            "Neymar Jr",
-            "Usain Bolt"
+            "Natalie Portman",
+            "Margot Robbie",
+            "Angelina Jolie"
         ],
         "question":{
-            "text":"What is the name of this athlete?"
+            "text":"What is the name of this actress?"
         },
         "tags":[
             "usa",
@@ -142,19 +142,19 @@
             
         ],
         "isNiche":false,
-        "image": "assets/images/lebron.jpg"
+        "image": "assets/images/jenniferlawrence.jpg"
     },
     {
         "category":"sport_and_leisure",
         "id":"62417cde0f96c4efe8d7738d",
-        "correctAnswer":"Lionel Messi",
+        "correctAnswer":"Johnny Depp",
         "incorrectAnswers":[
-            "Lance Armstrong",
-            "John Cena",
-            "Cristiano Ronaldo"
+            "Leonardo DiCaprio",
+            "Robert Downey Jr.",
+            "Chris Hemsworth"
         ],
         "question":{
-            "text":"What is the name of this athlete?"
+            "text":"What is the name of this actor?"
         },
         "tags":[
             "sport"
@@ -165,19 +165,19 @@
             
         ],
         "isNiche":false,
-        "image": "assets/images/lionelmessi.jpg"
+        "image": "assets/images/johnnydepp.jpg"
     },
     {
         "category":"sport_and_leisure",
         "id":"646262c1ab138b829b81ea5a",
-        "correctAnswer":"Conor McGregor",
+        "correctAnswer":"Leonardo DiCaprio",
         "incorrectAnswers":[
-            "Neymar Jr",
-            "Roger Federer",
-            "Kobe Bryant"
+            "Will Smith",
+            "Chris Hemsworth",
+            "Robert Downey Jr."
         ],
         "question":{
-            "text":"What is the name of this athlete?"
+            "text":"What is the name of this actor?"
         },
         "tags":[
             "baseball",
@@ -189,19 +189,19 @@
             
         ],
         "isNiche":false,
-        "image": "assets/images/mcgregor.jpg"
+        "image": "assets/images/leonardodicaprio.jpg"
     },
     {
         "category":"sport_and_leisure",
         "id":"645cb162602ff42ca52fb43f",
-        "correctAnswer":"Mike Tyson",
+        "correctAnswer":"Morgan Freeman",
         "incorrectAnswers":[
-            "LeBron James",
-            "Michael Jordan",
-            "Muhammad Ali"
+            "Samuel L. Jackson",
+            "Will Smith",
+            "Brad Pitt"
         ],
         "question":{
-            "text":"What is the name of this athlete?"
+            "text":"What is the name of this actor?"
         },
         "tags":[
             "gymnastics",
@@ -214,19 +214,19 @@
             
         ],
         "isNiche":true,
-        "image": "assets/images/miketyson.jpg"
+        "image": "assets/images/morganfreeman.jpg"
     },
     {
         "category":"sport_and_leisure",
         "id":"622a1c347cc59eab6f94f85c",
-        "correctAnswer":"Muhammad Ali",
+        "correctAnswer":"Natalie Portman",
         "incorrectAnswers":[
-            "Roger Federer",
-            "Usain Bolt",
-            "Kobe Bryant"
+            "Jennifer Lawrence",
+            "Margot Robbie",
+            "Angelina Jolie"
         ],
         "question":{
-            "text":"What is the name of this athlete?"
+            "text":"What is the name of this actor?"
         },
         "tags":[
             "football",
@@ -241,19 +241,19 @@
             
         ],
         "isNiche":false,
-        "image": "assets/images/muhammedali.jpg"
+        "image": "assets/images/natalieportman.jpg"
     },
     {
         "category":"sport_and_leisure",
         "id":"62399f03af96521963a08711",
-        "correctAnswer":"Neymar Jr",
+        "correctAnswer":"Robert Downey Jr.",
         "incorrectAnswers":[
-            "Roger Federer",
-            "Usain Bolt",
-            "Lance Armstrong"
+            "Johnny Depp",
+            "Harrison Ford",
+            "Tom Cruise"
         ],
         "question":{
-            "text":"What is the name of this athlete?"
+            "text":"What is the name of this actor?"
         },
         "tags":[
             "world_cup",
@@ -267,19 +267,19 @@
             
         ],
         "isNiche":false,
-        "image": "assets/images/neymarjr.jpg"
+        "image": "assets/images/robertdowneyjr.jpg"
     },
     {
         "category":"sport_and_leisure",
         "id":"62399f011437c7031fbe41d3",
-        "correctAnswer":"Cristiano Ronaldo",
+        "correctAnswer":"Samuel L. Jackson",
         "incorrectAnswers":[
-            "Lance Armstrong",
-            "John Cena",
-            "Lionel Messi"
+            "Morgan Freeman",
+            "Will Smith",
+            "Brad Pitt"
         ],
         "question":{
-            "text":"What is the name of this athlete?"
+            "text":"What is the name of this actor?"
         },
         "tags":[
             "sport"
@@ -290,19 +290,19 @@
             
         ],
         "isNiche":false,
-        "image": "assets/images/ronaldo.jpg"
+        "image": "assets/images/samueljackson.jpg"
     },
     {
         "category":"sport_and_leisure",
         "id":"622a1c347cc59eab6f94f887",
-        "correctAnswer":"Usain Bolt",
+        "correctAnswer":"Tom Cruise",
         "incorrectAnswers":[
-            "Muhammad Ali",
-            "Mike Tyson",
-            "Michael Jordan"
+            "Leonardo DiCaprio",
+            "Chris Hemsworth",
+            "Robert Downey Jr."
         ],
         "question":{
-            "text":"What is the name of this athlete?"
+            "text":"What is the name of this actor?"
         },
         "tags":[
             "people",
@@ -315,6 +315,31 @@
             
         ],
         "isNiche":false,
-        "image": "assets/images/usainbolt.jpg"
+        "image": "assets/images/tomcruise.jpg"
+    },
+    {
+        "category":"sport_and_leisure",
+        "id":"622a1c347cc59eab6f94f887",
+        "correctAnswer":"Will Smith",
+        "incorrectAnswers":[
+            "Leonardo DiCaprio",
+            "Brad Pitt",
+            "Robert Downey Jr."
+        ],
+        "question":{
+            "text":"What is the name of this actor?"
+        },
+        "tags":[
+            "people",
+            "general_knowledge",
+            "sport"
+        ],
+        "type":"text_choice",
+        "difficulty":"easy",
+        "regions":[
+            
+        ],
+        "isNiche":false,
+        "image": "assets/images/willsmith.jpg"
     }
 ]}
