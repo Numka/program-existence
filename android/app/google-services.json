@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "310272493160",
-    "project_id": "apusudm",
-    "storage_bucket": "apusudm.appspot.com"
+    "project_number": "374435341596",
+    "project_id": "lyyho-cb679",
+    "storage_bucket": "lyyho-cb679.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:310272493160:android:2c1b027eb112a8ee995ddd",
+        "mobilesdk_app_id": "1:374435341596:android:fa0afb75dd86abd777c6d9",
         "android_client_info": {
-          "package_name": "sportspeople.quiz"
+          "package_name": "hooly.trarders"
         }
       },
       "oauth_client": [
         {
-          "client_id": "310272493160-n4mohci27f1m6buo0b3b74gpr5qtvjmj.apps.googleusercontent.com",
+          "client_id": "374435341596-8ss5hi93a5veqivurqr2sa2sudu2ascb.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDP_oCzMFWrlRy75sEIZf8Qm-70ntZNYb0"
+          "current_key": "AIzaSyA6TC5wUuUSxqH098YdFmuIOxJeWZ6f3zM"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "310272493160-n4mohci27f1m6buo0b3b74gpr5qtvjmj.apps.googleusercontent.com",
+              "client_id": "374435341596-8ss5hi93a5veqivurqr2sa2sudu2ascb.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
