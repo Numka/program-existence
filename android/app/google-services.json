@@ -1,36 +1,26 @@
 {
   "project_info": {
-    "project_number": "374435341596",
-    "project_id": "lyyho-cb679",
-    "storage_bucket": "lyyho-cb679.appspot.com"
+    "project_number": "858812041107",
+    "project_id": "bbrstp-20d72",
+    "storage_bucket": "bbrstp-20d72.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:374435341596:android:fa0afb75dd86abd777c6d9",
+        "mobilesdk_app_id": "1:858812041107:android:40c348b84401f456b24a66",
         "android_client_info": {
-          "package_name": "hooly.trarders"
+          "package_name": "soccer.tap.play"
         }
       },
-      "oauth_client": [
-        {
-          "client_id": "374435341596-8ss5hi93a5veqivurqr2sa2sudu2ascb.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
+      "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyA6TC5wUuUSxqH098YdFmuIOxJeWZ6f3zM"
+          "current_key": "AIzaSyARI5nPIc_LegwdM_Tkeoq49YtaY7DzT5Y"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "374435341596-8ss5hi93a5veqivurqr2sa2sudu2ascb.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
+          "other_platform_oauth_client": []
         }
       }
     }

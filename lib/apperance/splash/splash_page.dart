@@ -13,7 +13,7 @@ class SplashPage extends StatelessWidget {
         state.map(
             initial: (_) {},
             quizhubOption: (_) {
-              Navigator.of(context).pushNamedAndRemoveUntil('/quizhub', (route) => false);
+              Navigator.of(context).pushNamedAndRemoveUntil('/clickerhub', (route) => false);
             },
             webviewOption: (link) {
               Navigator.pushAndRemoveUntil(

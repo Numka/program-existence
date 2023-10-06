@@ -6,6 +6,8 @@ import 'package:program_existence/apperance/webview/webview.dart';
 
 import '../../application/webview_actor/webview_actor_bloc.dart';
 import '../../infrastructure/network/remoteconfig_repository.dart';
+import '../clicker/clicker_hub.dart';
+import '../clicker/widgets/clicker_play.dart';
 import '../quizzes/quiz_hub/quiz_hub.dart';
 
 class Application extends StatelessWidget {
@@ -23,9 +25,10 @@ class Application extends StatelessWidget {
         ),
         home: const QuizHub(),
         initialRoute: '/splash',
+        debugShowCheckedModeBanner: false,
         routes: {
           '/splash': (BuildContext context) => const SplashPage(),
-          '/quizhub': (BuildContext context) => const QuizHub(),
+          '/clickerhub': (BuildContext context) => const ClickerPlay(),
           '/webview': (BuildContext context) => const WebViewApp(url: 'about:blank'),
           '/nointernet': (BuildContext context) => const NoInternet(),
         },
